@@ -1,0 +1,14 @@
+<div>
+    <div class="pills">
+        <span ng-repeat="pill in pills" class="pill" pill="pill">{{pill}}</span>
+    </div>
+
+    <input type="text" ng-model="model" real-input>
+
+    <ul class="suggestions" ng-show="suggestions.length">
+        <li ng-repeat="suggestion in suggestions | limitTo : limit | removeDupes : pills"
+            suggestion="suggestion"
+            class="suggestion"
+            ng-class="{'active': $index === config.activeIndex}">{{suggestion}}</li>
+    </ul>
+</div>

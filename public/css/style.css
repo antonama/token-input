@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+}
+
+.cool-input-wrapper {
+    position: relative;
+    padding: 0 0 2px 0;
+    width: 50%;
+    border: 1px solid black;
+    /*padding-right: 6px;*/
+    margin: 10px 0 0 10px;
+}
+
+.cool-input-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.suggestions {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+
+    margin: 0;
+    margin-top: 7px;
+    margin-left: -1px;
+    padding-left: 0;
+
+    border: 1px solid black;
+    border-radius: 0 0 4px 4px;
+}
+
+.suggestion {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.active {
+    color: red;
+}
+
+input {
+    font-size: 0.8em;
+    outline: none;
+    border: none;
+    padding: 0;
+    padding-top: 2px;
+    position: relative;
+    padding-left: 5px;
+}
+
+.pills {
+    display: inline-block;
+}
+
+.pill {
+    padding: 5px;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.pill:hover {
+    background-color: aquamarine;
+    color: white;
+}
